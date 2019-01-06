@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_l">18dp</dimen>
+    <dimen name="font_size_n">16dp</dimen>
+    <dimen name="font_size_s">14dp</dimen>
+    <dimen name="font_size_xs">12dp</dimen>
+
+    <dimen name="dist_xxl">30dp</dimen>
+    <dimen name="dist_xl">25dp</dimen>
+    <dimen name="dist_l">20dp</dimen>
+    <dimen name="dist_n">15dp</dimen>
+    <dimen name="dist_s">10dp</dimen>
+    <dimen name="dist_xs">5dp</dimen>
+
+    <dimen name="dist_frame_top">30dp</dimen>
+
+    <dimen name="add_baby_edit_text_height">50dp</dimen>
+
+    <dimen name="rectangle_btn_radius">3dp</dimen>
+    <dimen name="rectangle_big_btn_radius">6dp</dimen>
+
+    <dimen name="separator_height">0.5dp</dimen>
+    
+    <dimen name="radio_btn_radius">15dp</dimen>
+    <dimen name="radio_btn_inner_radius">5dp</dimen>
+    <dimen name="radio_btn_ring_size">5dp</dimen>
+
+    <dimen name="block_dist">10dp</dimen>
+    <dimen name="block_height">60dp</dimen>
+
+    <dimen name="flowed_btn_height">80dp</dimen>
+    <dimen name="label_height">50dp</dimen>
+
+    <dimen name="action_bar_height">56dp</dimen>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color_gray">
+
+    <include android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        layout="@layout/view_action_bar"
+        android:id="@+id/action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dist_n"
+                android:id="@+id/container_unauthenticated">
+
+                <Button
+                    style="@style/GreenBtnStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dist_n"
+                    android:layout_marginRight="@dimen/dist_n"
+                    android:layout_marginTop="@dimen/dist_n"
+                    android:text="@string/sign_in"
+                    android:id="@+id/btn_sign_in" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dist_n"
+                android:id="@+id/container_authenticated">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/layer_container_top_bottom_border"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dist_n"
+                    android:paddingRight="@dimen/dist_n"
+                    android:gravity="center_vertical"
+                    android:id="@+id/btn_my_orders">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_copy" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dist_xs"
+                        android:layout_marginRight="@dimen/dist_xs"
+                        android:text="@string/my_orders" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_right_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/dist_n"
+                    android:background="@drawable/layer_container_top_bottom_border"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dist_n"
+                    android:paddingRight="@dimen/dist_n"
+                    android:gravity="center_vertical"
+                    android:id="@+id/btn_visitor_info">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_users" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dist_xs"
+                        android:layout_marginRight="@dimen/dist_xs"
+                        android:text="@string/visitor_info" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_right_arrow" />
+                </LinearLayout>
+
+                <Button
+                    style="@style/GreenBtnStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dist_n"
+                    android:layout_marginRight="@dimen/dist_n"
+                    android:layout_marginTop="@dimen/dist_n"
+                    android:text="@string/sign_out"
+                    android:id="@+id/btn_sign_out" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

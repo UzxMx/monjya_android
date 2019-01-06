@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/dist_n"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/layer_container_top_border">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/start_date" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/dist_s"
+                    android:id="@+id/tv_start_date"
+                    android:text="@string/pls_select_start_date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/layer_container_top_bottom_border">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/start_place" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dist_s"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/pls_input_start_place"
+                    android:textColorHint="@color/primary_gray"
+                    android:id="@+id/et_start_place" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="@dimen/dist_n"
+                android:paddingRight="@dimen/dist_n">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/visitor_info" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btn_select_visitor"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_plus" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dist_xs"
+                        android:text="@string/select_visitor" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/layer_container_top_bottom_border"
+                android:gravity="center"
+                android:text="@string/no_visitor_selected"
+                android:id="@+id/container_no_visitor" />
+
+            <com.monjya.android.view.SelectedVisitorsView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/selected_visitors_view" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layer_container_top_bottom_border"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dist_s"
+                android:text="@string/order_total_price" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dist_s"
+                android:id="@+id/tv_price_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_l"
+                android:textColor="@color/red"
+                android:id="@+id/tv_price_2" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:id="@+id/btn_submit" />
+    </LinearLayout>
+
+</LinearLayout>

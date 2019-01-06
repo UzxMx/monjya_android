@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.monjya.android"
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file('monjya.jks')
+            storePassword 'monjya'
+            keyAlias 'android'
+            keyPassword 'monjya'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:design:24.0.0'
+    compile 'com.android.support:percent:24.0.0'
+    compile 'com.android.support:gridlayout-v7:24.0.0'
+    compile 'com.j256.ormlite:ormlite-android:4.48'
+    compile 'com.mcxiaoke.volley:library:1.0.+'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.5.1'
+    compile 'fr.dvilleneuve.android:enhanced-edittext:1.0@aar'
+    compile 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+    compile 'com.makeramen:roundedimageview:2.2.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.viewpagerindicator:library:2.4.1@aar'
+    compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.6.0'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient-android' , version: '4.3.5.1'
+    compile('org.apache.httpcomponents:httpmime:4.3.6') {
+        exclude module: 'httpclient'
+    }
+    compile 'com.nakama.arraypageradapter:arraypageradapter:0.1.2'
+    compile 'se.emilsjolander:stickylistheaders:2.7.0'
+    testCompile 'junit:junit:4.12'
+}

@@ -1,0 +1,131 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="actionBarTheme">@style/CustomActionBarTheme</item>
+
+        <item name="android:textColor">@color/primary_gray</item>
+        <item name="android:textSize">@dimen/font_size_s</item>
+
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button.Borderless"></style>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="CustomActionBarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionBarItemBackground">@drawable/selector_white_btn</item>
+        <item name="android:actionBarItemBackground">@drawable/selector_white_btn</item>
+        <item name="selectableItemBackground">@drawable/selector_white_btn</item>
+        <item name="android:selectableItemBackground">@drawable/selector_white_btn</item>
+
+        <item name="background">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:textColor">@color/primary_gray</item>
+        <item name="android:textSize">@dimen/font_size_s</item>
+
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <style name="DefaultEditTextStyle">
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@drawable/selector_edittext</item>
+        <item name="android:textSize">@dimen/font_size_n</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="GreenBtnStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/selector_green_btn_color</item>
+        <item name="android:paddingTop">@dimen/dist_s</item>
+        <item name="android:paddingBottom">@dimen/dist_s</item>
+        <item name="android:background">@drawable/selector_green_btn</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">@dimen/font_size_n</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="BigGreenBtnStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/selector_green_btn_color</item>
+        <item name="android:paddingTop">@dimen/dist_s</item>
+        <item name="android:paddingBottom">@dimen/dist_s</item>
+        <item name="android:background">@drawable/selector_big_green_btn</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">@dimen/font_size_n</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="WhiteBtnStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:paddingTop">@dimen/dist_s</item>
+        <item name="android:paddingBottom">@dimen/dist_s</item>
+        <item name="android:background">@drawable/shape_white_btn</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">@dimen/font_size_n</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TransparentDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="CustomDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/custom_dialog_window_bg_color</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="CustomTransparentDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="DialogSlideAnim" parent="CustomDialogStyle">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <style name="TransparentDialogSlideAnim" parent="DialogSlideAnim">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
+        <item name="tabBackground">@color/white</item>
+    </style>
+
+</resources>

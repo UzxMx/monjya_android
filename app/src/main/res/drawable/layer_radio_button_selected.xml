@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval">
+            <size android:width="@dimen/radio_btn_radius" android:height="@dimen/radio_btn_radius" />
+            <solid android:color="@color/blue" />
+        </shape>
+    </item>
+
+    <item android:top="@dimen/radio_btn_ring_size" android:left="@dimen/radio_btn_ring_size" android:right="@dimen/radio_btn_ring_size"
+        android:bottom="@dimen/radio_btn_ring_size">
+        <shape android:shape="oval">
+            <size android:width="@dimen/radio_btn_inner_radius" android:height="@dimen/radio_btn_inner_radius" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</layer-list>

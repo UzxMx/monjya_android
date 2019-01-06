@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitlePageIndicator">
+        <attr name="textSize" format="dimension" />
+        <attr name="textPadding" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="textActiveColor" format="color" />
+        <attr name="underlineColor" format="color" />
+        <attr name="underlineHeight" format="dimension" />
+        <attr name="cicleRadius" format="dimension" />
+        <attr name="gap" format="dimension" />
+    </declare-styleable>
+</resources>

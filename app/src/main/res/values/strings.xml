@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">monjya_android</string>
+    <string name="loading">加载中</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="submit">提交</string>
+    <string name="network_error">网络异常，请稍后尝试</string>
+    <string name="save">保存</string>
+    <string name="send">发送</string>
+    <string name="great">赞</string>
+    <string name="remove">删除</string>
+    <string name="details">详情</string>
+    <string name="journey">行程</string>
+    <string name="play_method">玩法</string>
+    <string name="edit">编辑</string>
+    <string name="add">添加</string>
+    <string name="create_success">创建成功</string>
+    <string name="return_home">返回首页</string>
+    <string name="view_details">查看详情</string>
+    <string name="status">状态</string>
+    <string name="main_activity_back_btn_hint">再按一次退出</string>
+    <string name="confirm_to_exit">确认要退出当前账号吗？</string>
+
+    <string name="tab_home">首页</string>
+    <string name="tab_order">行程</string>
+    <string name="tab_my">我的</string>
+
+    <string name="open_time_with_colon">开放时间:</string>
+    <string name="product_address_with_colon">景点地址:</string>
+    <string name="place_order">在线预定</string>
+
+    <!-- sign in -->
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="pls_input_username">请输入用户名</string>
+    <string name="pls_input_password">请输入密码</string>
+    <string name="sign_in">登录</string>
+    <string name="sign_up">注册</string>
+    <string name="account_or_password_wrong">用户名或密码错误</string>
+
+    <!-- sign up -->
+    <string name="confirm_password">确认密码</string>
+    <string name="pls_input_password_again">请再次输入密码</string>
+    <string name="password_mismatch">两次输入的密码不一致</string>
+    <string name="username_existed">用户名已存在</string>
+
+    <!-- select travel agent -->
+    <string name="select_travel_agent">选择旅行社</string>
+    <string name="skip_the_step">跳过该步骤</string>
+
+    <!-- create order -->
+    <string name="create_order">创建订单</string>
+    <string name="start_date">出发日期</string>
+    <string name="start_place">出发地</string>
+    <string name="pls_select_start_date">请选择出发日期</string>
+    <string name="pls_input_start_place">请输入出发地</string>
+    <string name="visitor_info">游客信息</string>
+    <string name="select_visitor">选择游客</string>
+    <string name="no_visitor_selected">未选择游客</string>
+    <string name="order_total_price">订单总价格</string>
+    <string name="pls_select_visitor">请选择游客</string>
+
+    <!-- fragment my -->
+    <string name="sign_out">退出登录</string>
+    <string name="my_orders">我的订单</string>
+
+    <!-- select start place -->
+    <string name="select_start_place">选择出发地</string>
+    
+    <string name="name">姓名</string>
+    <string name="pls_input_name">请输入姓名</string>
+    <string name="telephone">联系方式</string>
+    <string name="pls_input_telephone">请输入手机号／电话</string>
+
+    <!-- -->
+    <string name="add_visitor">添加游客</string>
+    <string name="edit_visitor">编辑游客</string>
+    
+    <!-- pay order -->
+    <string name="pay_now">立即支付</string>
+    <string name="pay_order">支付订单</string>
+    <string name="order_created_success">订单创建成功！需支付</string>
+    <string name="order_needs_to_pay">订单需支付</string>
+    <string name="pay_by_alipay">支付宝付款</string>
+    <string name="pay_channel">支付方式</string>
+
+    <string name="pay_success">支付成功</string>
+    <string name="pay_order_success">订单支付成功！</string>
+    <string name="pay_order_success_description_1">工作人员会在行程开始的前一天与您联系，请保持手机畅通。</string>
+    <string name="pay_order_success_description_2">如果您有任何问题，请联系客服电话：0359-8888888</string>
+    
+    <!-- order -->
+    <string name="order_number">订单号</string>
+    <string name="scene">景点</string>
+    <string name="order_details">订单详情</string>
+    <string name="unpaid">未支付</string>
+    <string name="paid">已支付</string>
+    <string name="price">价格</string>
+    <string name="cancel_order">取消订单</string>
+
+</resources>
